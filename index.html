@@ -1,245 +1,249 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="id">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Allief CV</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
-    media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  </noscript>
-  <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-  <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-  <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
-  <link href="css/main.css?ver=1.2.0" rel="stylesheet">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Selamat Ulang Tahun A Fajar 🎉</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all .3s ease;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(45deg, #ff00c8, #00ffe1, #ffea00, #ff0055);
+            background-size: 400% 400%;
+            animation: bgShift 5s infinite alternate;
+            color: #111;
+            overflow-x: hidden;
+        }
+
+        @keyframes bgShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 3px 3px #ff00ff, -3px -3px #00ffff;
+            margin-top: 40px;
+            transform: rotate(-1deg);
+        }
+
+        .input-umur {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .input-umur input {
+            width: 60px;
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 5px;
+            border-radius: 8px;
+            border: 2px solid #ff00ff;
+            font-family: inherit;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-bottom: 150px;
+        }
+
+        button {
+            background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 20px #000 inset;
+            animation: wiggle 1s infinite alternate;
+        }
+
+        @keyframes wiggle {
+            0% {
+                transform: rotate(-2deg)
+            }
+
+            100% {
+                transform: rotate(2deg)
+            }
+        }
+
+        .photo {
+            margin-top: 30px;
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 5px solid #fff;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+            transform: rotate(1deg);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message {
+            font-size: 1.3rem;
+            margin-top: 25px;
+            text-align: center;
+            background: #fff;
+            padding: 25px;
+            border: 6px double #ff00ff;
+            border-radius: 20px;
+            transform: rotate(-1deg);
+            max-width: 600px;
+            box-shadow: 0 0 20px #00000055;
+        }
+
+        .real-msg {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-top: 60px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            border: 3px dashed #00ffff;
+            max-width: 700px;
+            color: #333;
+            box-shadow: 0 0 10px #ff00ff99;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .real-msg b {
+            color: #008080;
+        }
+
+        .confetti span {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--color);
+            top: -20px;
+            animation: fall 3s linear infinite;
+            z-index: 1000;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg)
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(720deg)
+            }
+        }
     </style>
-  </noscript>
 </head>
 
-<body id="top">
-  <header class="d-print-none">
-    <div class="container text-center text-lg-left">
-      <div class="py-3 clearfix">
-        <div class="site-nav">
+<body>
+    <h1>🎂 Selamat Ulang Tahun yang ke-<span id="umurDisplay">...</span> Buat A Fajar! 🎉</h1>
+    <div class="input-umur">
+        <label for="umurInput" style="color:white;font-weight:bold;">Isi umurnya sendiri:</label>
+        <input type="number" id="umurInput" min="1" placeholder="??" />
+    </div>
 
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="page-content">
     <div class="container">
-      <div class="cover shadow-lg bg-white">
-        <div class="cover-bg p-3 p-lg-4 text-white">
-          <div class="row">
-            <div class="col-lg-4 col-md-5">
-              <div class="avatar hover-effect bg-white shadow-sm p-1"><img src="images/avatar.jpg" width="200"
-                  height="200" /></div>
-            </div>
-            <div class="col-lg-8 col-md-7 text-center text-md-start">
-              <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Allief Firdaus Jundan Muttaqien</h2>
-            </div>
-          </div>
+        <div class="photo">
+            <img src="gambar/foto (1).jpg" alt="foto lucu" id="fotoGambar">
         </div>
-        <div class="about-section pt-4 px-3 px-lg-4 mt-1">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="h3 mb-3">Tentangku</h2>
-              <p>Memiliki kompetensi dalam bidang Pengembangan Perangkat Lunak dengan ketertarikan pada perkembangan
-                teknologi dan perangkat lunak terkini.
-              </p>
-            </div>
-            <div class="col-md-5 offset-md-1">
-              <div class="row mt-2">
-                <div class="col-sm-4">
-                  <div class="pb-1">Email</div>
-                </div>
-                <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">alliefjundan@gmail.com</div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="pb-1">No. Telepon</div>
-                </div>
-                <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">+62 823-1847-8060</div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="pb-1">Alamat</div>
-                </div>
-                <div class="col-sm-8">
-                  <div class="pb-1 text-secondary">Komp. Abdi Negara 2, Kec. Cileunyi. Kab.Bandung, Indonesia</div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <div class="message" id="msg">Semoga bantalnya dingin di semua sisinya💤❄️</div>
+
+        <button id="btn">--->Klik Ini<---</button>
+
+        <div class="real-msg">
+            <b>Barakallahu fii umrik, A Fajar </b>
+            Semoga umur yang Allah kasih semakin berkah,
+            semua urusannya dipermudah, rezekinya dilancarkan, sehat selalu,
+            terus bahagia, dan pokoknya yang terbaik lah!
         </div>
-        <hr class="d-print-none" />
-        <div class="skills-section px-3 px-lg-4">
-          <h2 class="h3 mb-3">Keterampilan Teknis</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-2 d-flex justify-content-between">
-                <span>HTML</span>
-                <span>Pemula</span>
-              </div>
-              <div class="progress my-1">
-                <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100"
-                  data-aos-anchor=".skills-section" style="width: 20%" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-              <div class="mb-2 d-flex justify-content-between">
-                <span>PHP</span>
-                <span>Pemula</span>
-              </div>
-              <div class="progress my-1">
-                <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200"
-                  data-aos-anchor=".skills-section" style="width: 20%" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-              <div class="mb-2 d-flex justify-content-between">
-                <span>CSS</span>
-                <span>Pemula</span>
-              </div>
-              <div class="progress my-1">
-                <div class="progress-bar bg-warning" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200"
-                  data-aos-anchor=".skills-section" style="width: 15%" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-        <div class="page-break"></div>
-        <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Keterampilan Non Teknis</h2>
-          <div class="timeline">
-            <div class="timeline-card timeline-card-success card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1"> <span class="text-muted h6"></div>
-                <div class="h5 mb-1">Adaptasi <span class="text-muted h6"></div>
-                <div class="h5 mb-1">Kerja Sama Tim <span class="text-muted h6"></div>
-                <div class="h5 mb-1">Komunikasi <span class="text-muted h6"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-        <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4">Pegalaman Organisasi</h2>
-          <div class="timeline">
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">RISMA Al-Muhajirin</div>
-                <div class="text-muted text-small mb-2">2024 - 2026</div>
-                <div>Sekertaris Umum</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-        <div class="work-experience-section px-3 px-lg-4">
-          <h2 class="h3 mb-4">Projek</h2>
-          <div class="timeline">
-            <div class="timeline-card timeline-card-danger card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">Aplikasi Kasir</div>
-                <div class="text-muted text-small mb-2">November 2024</div>
-                <div>Membuat aplikasi kasir untuk mempermudah proses transaksi yang ditujukan kepada usaha kecil.
-                  Aplikasi ini dibuat menggunakan HTML, PHP, dan CSS.</div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-danger card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">Aplikasi Peminjaman Barang</div>
-                <div class="text-muted text-small mb-2">Januari - April 2024</div>
-                <div>Mengembangkan aplikasi peminjaman barang berbasis web dan mobile untuk mempermudah pengelolaan
-                  dan
-                  pencatatan peminjaman di SMK Bakti Nusantara 666.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-        <div class="page-break"></div>
-        <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Riwayat Pendidikan</h2>
-          <div class="timeline">
-            <div class="timeline-card timeline-card-success card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">SMK Bakti Nusantara 666 <span class="text-muted h6"></div>
-                <div class="text-muted text-small mb-2">Juli 2022 - Juni 2025</div>
-                <div>Pengembangan Perangkat Lunak dan Gim (PPLG).</div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-success card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">MTS Plus Darul Hufadz <span class="text-muted h6"></div>
-                <div class="text-muted text-small mb-2">Juli 2019 - Juni 2022</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="d-print-none" />
-        <div class="page-break"></div>
-        <div class="education-section px-3 px-lg-4 pb-4">
-          <h2 class="h3 mb-4">Hobi</h2>
-          <div class="timeline">
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1"> <span class="text-muted h6"></div>
-                <div class="h5 mb-1">Bermain Game <span class="text-muted h6"></div>
-                <div class="h5 mb-1">Membaca Komik<span class="text-muted h6"></div>
-                <div class="h5 mb-1">Mendengar Musik <span class="text-muted h6"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+        <div style="height:200px"></div>
     </div>
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Allief Firdaus Jundan Muttaqien</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://www.tiktok.com/@alliefjundan" terget="_blank"
-                    title="Tiktok"><i class="fab fa-tiktok"></i><span class="menu-title sr-only">Tiktok</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/Allief017" terget="_blank"
-                    title="Instagram"><i class="fab fa-instagram"></i><span
-                      class="menu-title sr-only">Instagram</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/alliefjundan" terget="_blank"
-                    title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="text-small">
-          <div class="mb-1">&copy; Right Resume. All rights reserved.</div>
-          <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
-        </div>
-      </div>
-    </footer>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/aos.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
+
+    <div class="confetti" id="confetti"></div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const msg = document.getElementById('msg');
+        const confetti = document.getElementById('confetti');
+        const foto = document.getElementById('fotoGambar');
+        const umurInput = document.getElementById('umurInput');
+        const umurDisplay = document.getElementById('umurDisplay');
+
+        const messages = [
+            'Semoga kipas anginmu muter terus walau listrik naik ⚡🌀',
+            'Semoga kalau makan es krim gak pernah lumer kemana mana 🍦😋',
+            'Semoga bantalnya dingin di semua sisinya 💤❄️',
+            'Semoga nemu posisi selimut paling nyaman sepanjang malam 🛌✨',
+            "Semoga sendalnya gampang ketemu kalau habis sholat jum'at 🥿🕌",
+            'Semoga gak pernah disconnect Wi-Fi pas lagi seru-serunya 🎮📶',
+            'Semoga kalau kebelet malem malem gak pernah mati listriknya 🚽💡',
+            'Semoga kalau isi bensin antrinya gak panjang banget ⛽🛵',
+            'Semoga kalau ada acara gak pernah ngaret lagi ⏰🎉',
+        ];
+
+        const totalFoto = 6;
+        let fotoIndex = 1;
+
+        umurInput.addEventListener('input', () => {
+            umurDisplay.textContent = umurInput.value || '...';
+        });
+
+        btn.addEventListener('click', () => {
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            msg.textContent = randomMsg;
+
+            fotoIndex++;
+            if (fotoIndex > totalFoto) fotoIndex = 1;
+            foto.src = `gambar/foto (${fotoIndex}).jpg`;
+
+            spawnConfetti();
+            document.body.style.background = `linear-gradient(45deg, ${randColor()}, ${randColor()}, ${randColor()}, ${randColor()})`;
+        });
+
+        function randColor() {
+            return `hsl(${Math.random() * 360},100%,60%)`;
+        }
+
+        function spawnConfetti() {
+            for (let i = 0; i < 40; i++) {
+                const c = document.createElement('span');
+                c.style.setProperty('--color', randColor());
+                c.style.left = Math.random() * 100 + 'vw';
+                c.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                confetti.appendChild(c);
+                setTimeout(() => c.remove(), 3000);
+            }
+        }
+    </script>
 </body>
 
 </html>
